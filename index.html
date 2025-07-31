@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <title>Guns.lol Style Site</title>
 
-  <!-- Google Font: Press Start 2P for pixel/gaming vibe -->
+  <!-- Font similar to guns.lol -->
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <style>
@@ -26,18 +26,18 @@
       height: 100%;
       object-fit: cover;
       z-index: -2;
-      filter: brightness(0.3);
+      /* Removed brightness filter */
     }
     .content {
       position: relative;
       top: 45%;
       transform: translateY(-50%);
       z-index: 10;
+      text-shadow: 0 0 5px black; /* to keep text readable */
     }
     audio {
       display: none;
     }
-    /* Discord widget container */
     #discord-presence {
       margin-top: 40px;
       display: flex;
@@ -55,7 +55,7 @@
     <p>Background music is playing...</p>
 
     <div id="discord-presence">
-      <!-- Discord Presence widget iframe -->
+      <!-- Discord Presence widget -->
       <iframe src="https://lanyard.cnrad.dev/widget/1057215291085565962" width="300" height="80" frameborder="0" scrolling="no" style="border-radius:10px;"></iframe>
     </div>
   </div>
@@ -63,8 +63,6 @@
   <!-- Background music -->
   <audio autoplay loop>
     <source src="https://files.catbox.moe/7hmd50.mp3" type="audio/mpeg" />
-    Your browser does not support the audio element.
   </audio>
 </body>
 </html>
-
